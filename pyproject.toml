@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nurse-stress-wearable-research"
+version = "1.0.0"
+description = "Reproducible wearable sensor research with participant-disjoint model evaluation"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "GPL-3.0-only"}
+authors = [{name = "Priyank Raval"}]
+keywords = ["wearable-sensors", "stress-detection", "machine-learning", "reproducible-research"]
+dependencies = ["numpy>=1.26,<3", "pandas>=2.1,<3", "scikit-learn>=1.4,<2", "openpyxl>=3.1,<4"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.scripts]
+nurse-stress = "nurse_stress.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["nurse_stress*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

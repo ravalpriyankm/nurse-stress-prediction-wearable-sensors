@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use the code, please cite this repository and the original Dryad dataset and Scientific Data publication."
+title: "Nurse Stress Prediction with Wearable Sensors: Reproducibility Toolkit"
+type: software
+abstract: "Originated as a University of Essex CE888 (Data Science and Decision Making) module project in the 2022-2023 academic year; this release is a later reproducibility and engineering refresh."
+authors:
+  - family-names: Raval
+    given-names: Priyank
+version: 1.0.0
+license: GPL-3.0-only
+repository-code: "https://github.com/ravalpriyankm/nurse-stress-prediction-wearable-sensors"
+keywords:
+  - stress prediction
+  - wearable sensors
+  - machine learning
+  - reproducible research
